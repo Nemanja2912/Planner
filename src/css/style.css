@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  max-width: 600px;
+  margin: auto;
+}
+
+.introduction {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+
+.introduction .body {
+  display: grid;
+  grid-template-columns: 100% 100% 100%;
+  overflow-x: hidden;
+}
+
+.introduction .body .body-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr max-content;
+  transition: 1s;
+}
+
+.introduction .top {
+  background-size: cover;
+  background-position: center;
+}
+
+.introduction .events-top {
+  background-image: url(../image/event.png);
+}
+
+.introduction .tasks-top {
+  background-image: url(../image/task.png);
+}
+
+.introduction .notes-top {
+  background-image: url(../image/note.png);
+}
+
+.introduction .bottom {
+  display: flex;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.introduction .bottom .text h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.introduction .navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 15px;
+  padding-top: 25px;
+}
+
+.introduction .navigation .dots {
+  display: flex;
+  justify-content: center;
+}
+
+.introduction .navigation .dots .dot {
+  height: 10px;
+  width: 10px;
+  background-color: #424242;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.introduction .navigation .dots .dot-active {
+  background-color: #828282 !important;
+}
+
+.introduction .navigation .dots .margin-left {
+  margin-left: 10px;
+}
+
+.introduction .navigation .nav-btn {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+}
